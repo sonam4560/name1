@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- about css link -->
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- js cdn -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1400,
+                loop: true,
+                autoplay: { delay: 2000 }
+            });
+        });
+    </script>
+    <style>
+        .theme {
+            background-color: black;
+            color: white;
+        }
+
+        .theme p {
+            color: blue;
+        }
+
+        .icon-icon {
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        .item {
+            height: 200px;
+            width: 200px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <section class="header-1">
+        <header>
+            <div class="header-container1">
+                <div class="main-class">
+                    <ul class="">
+                        <li> <span><i class="fa-solid fa-phone"></i></span> <span>+ 1235 2355 98</span></li>
+                        <li> <span><i class="fa-solid fa-paper-plane"></i></span> <span>YOUREMAIL@EMAIL.COM</span></li>
+                        <li> <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="header-2">
+        <div class="header-container2">
+            <header class="header-main-div">
+                <div class="logo">
+                    <h1>VEGEFOODS</h1>
+                </div>
+
+                <div class="header-bar">
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="bar-button">
+                    <button class="display-menu">
+                        <span class="fa-solid fa-bars  "></span>
+                    </button>
+
+                </div>
+                <div class="icon-icon">
+                    <span class="fa-solid fa-moon"></span>
+
+                </div>
+            </header>
+        </div>
+    </section>
+    <script>
+        let displaymenu = document.querySelector(".display-menu")
+        let headerbar = document.querySelector(".header-bar")
+        displaymenu.addEventListener("click", function () {
+            headerbar.classList.toggle("menu")
+
+        });
+    </script>
+    <script>
+        let icon = document.querySelector(".fa-moon");
+        let bg = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            bg.classList.toggle("theme");
+            if (bg.classList.contains("theme") == true) {
+                icon.classList.remove("fa-moon");
+                icon.innerHTML = "<span class='fa-solid fa-sun'></span>";
+            }
+            else {
+                icon.classList.remove("fa-sun");
+                icon.innerHTML = "<span class='fa-solid fa-moon'></span>";
+            }
+        }
+
+        );
+    </script>
+    <section class="landing-page-sec">
+        <div class="landing-page-container">
+            <div class="landing-img-sec">
+                <ul class="right-nav">
+                    <span class="anchor-tag"><a href="index.html">Home</a><span>/<span class="anchor-tag-color"><a
+                                    href="shop.html">Shop</a></span>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class=".hash-nav">
+        <div class="hashnav-container">
+            <div class="vegies-main">
+                <ul>
+                    <li><a href="#data1"> All</a></li>
+                    <li><a href="#data2">vegitabels</a></li>
+                    <li><a href="#data3"> fruits</a></li>
+                    <li><a href="#data4"> Juice</a></li>
+                    <li><a href="#data5"> Dried</a></li>
+                </ul>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item " data-hash="data1">
+                    <h1>1</h1>
+                </div>
+                <div class=" item  " data-hash="data2">
+                    <h1>1</h1>
+                </div>
+                <div class=" item  " data-hash="data3">
+                    <h1>1</h1>
+                </div>
+                <div class=" item " data-hash="data4">
+                    <h1>1</h1>
+                </div>
+                <div class=" item " data-hash="data5">
+                    <h1>1</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function () {
+            $('.owl-carousel').owlCarousel({
+                items: 4,
+                loop: false,
+                center: true,
+                margin: 10,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash'
+            });
+        })
+    </script>
+</body>
+
+</html>

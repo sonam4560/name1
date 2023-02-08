@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-aws link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- about css link -->
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1400,
+                loop: true,
+                autoplay: { delay: 2000 }
+            });
+        });
+    </script>
+    <style>
+        .theme {
+            background-color: black;
+            color: white;
+        }
+
+        .theme p {
+            color: blue;
+        }
+
+        .icon-icon {
+            /* color: white; */
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header-1">
+        <header>
+            <div class="header-container1">
+                <div class="main-class">
+                    <ul class="">
+                        <li> <span><i class="fa-solid fa-phone"></i></span> <span>+ 1235 2355 98</span></li>
+                        <li> <span><i class="fa-solid fa-paper-plane"></i></span> <span>YOUREMAIL@EMAIL.COM</span></li>
+                        <li> <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="header-2">
+        <div class="header-container2">
+            <header class="header-main-div">
+                <div class="logo">
+                    <h1>VEGEFOODS</h1>
+                </div>
+                <div class="header-bar">
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+                <div class="bar-button">
+                    <button class="display-menu">
+                        <span class="fa-solid fa-bars  "></span>
+                    </button>
+
+                </div>
+                <div class="icon-icon">
+                    <span class="fa-solid fa-moon"></span>
+
+                </div>
+            </header>
+        </div>
+    </section>
+    <script>
+        let displaymenu = document.querySelector(".display-menu")
+        let headerbar = document.querySelector(".header-bar")
+        displaymenu.addEventListener("click", function () {
+            headerbar.classList.toggle("menu")
+
+        });
+    </script>
+
+    <script>
+        let icon = document.querySelector(".fa-moon");
+        let bg = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            bg.classList.toggle("theme");
+            if (bg.classList.contains("theme") == true) {
+                icon.classList.remove("fa-moon");
+                icon.innerHTML = "<span class='fa-solid fa-sun'></span>";
+            }
+            else {
+                icon.classList.remove("fa-sun");
+                icon.innerHTML = "<span class='fa-solid fa-moon'></span>";
+
+
+            }
+        }
+
+        );
+
+    </script>
+
+
+
+    <section class="landing-page-sec">
+        <div class="landing-page-container">
+            <div class="landing-img-sec">
+                <!-- <img src="../image/v1.jpg" alt=""> -->
+
+                <ul class="right-nav">
+                    <span class="anchor-tag"><a href="index.html">Home</a><span>/<span class="anchor-tag-color"><a
+                                    href="shop.html">Blog</a></span>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-sec">
+        <div class="category-container">
+            <div class="category-main-div">
+                <div class="category-div1">
+                    <div class="category-img-sec">
+                        <div class="category-img">
+                            <img src="../image/img1.jpg" alt="">
+                        </div>
+                        <div class="category-content">
+                            <p class="para"> july 20,2019 Admin 3</p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <p class="category-para"> Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="button">
+                                <button class="button-btn">View details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-img-sec">
+                        <div class="category-img">
+                            <img src="../image/image_2.jpg" alt="">
+                        </div>
+                        <div class="category-content">
+                            <p class="para"> july 20,2019 Admin 3</p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <p class="category-para"> Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="button">
+                                <button class="button-btn">View details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-img-sec">
+                        <div class="category-img">
+                            <img src="../image/image_3.jpg" alt="">
+                        </div>
+                        <div class="category-content">
+                            <p class="para"> july 20,2019 Admin 3</p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <p class="category-para"> Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="button-b">
+                                <button class="button-btn">View details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-img-sec">
+                        <div class="category-img">
+                            <img src="../image/image_4.jpg" alt="">
+                        </div>
+                        <div class="category-content">
+                            <p class="para"> july 20,2019 Admin 3</p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <p class="category-para"> Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="button">
+                                <button class="button-btn">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-img-sec">
+                        <div class="category-img">
+                            <img src="../image/image_5.jpg" alt="">
+                        </div>
+                        <div class="category-content">
+                            <p class="para"> july 20,2019 Admin 3</p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <p class="category-para"> Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="button">
+                                <button class="button-btn">View details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-img-sec">
+                        <div class="category-img">
+                            <img src="../image/image_6.jpg" alt="">
+                        </div>
+                        <div class="category-content">
+                            <p class="para"> july 20,2019 Admin 3</p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <p class="category-para"> Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="button">
+                                <button class="button-btn">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catogory-div2">
+                    <div class="search-btn">
+                        <input type="text" placeholder="search............">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="catogory-list">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li>Vegetables (12)</li>
+                            <li>Fruit(22)</li>
+                            <li>Juices(37)</li>
+                            <li> Dries(42)</li>
+                        </ul>
+                    </div>
+                    <div class="recent-tag">
+                        <p class="recent-p">Recent Blog</p>
+                        <div class="recent-blog-sec">
+
+                            <div class="recent-img">
+                                <img src="../image/image_5.jpg" alt="">
+                            </div>
+                            <div class="recent-content">
+                                <p class="recent-para">
+                                    Even the all-powerful Pointing has no control about the blind texts</p>
+                                <div class="recent-info">
+                                    <div class="recent-info-1"><span class="fa-regular fa-calendar-days"></span><span
+                                            class="info2"> April 19, 2019</span></div>
+                                    <div class="recent-info-1"><span class="fa-solid fa-person"></span><span
+                                            class="info2"> Admin</span></div>
+                                    <div class="recent-info-1"><span class="fa-regular fa-comment"></span><span
+                                            class="info2"> 19</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-blog-sec">
+                            <div class="recent-img">
+                                <img src="../image/image_2.jpg" alt="">
+                            </div>
+                            <div class="recent-content">
+                                <p class="recent-para">
+                                    Even the all-powerful Pointing has no control about the blind texts</p>
+                                <div class="recent-info">
+                                    <div class="recent-info-1"><span class="fa-regular fa-calendar-days"></span><span
+                                            class="info2"> April 19, 2019</span></div>
+                                    <div class="recent-info-1"><span class="fa-solid fa-person"></span><span
+                                            class="info2"> Admin</span></div>
+                                    <div class="recent-info-1"><span class="fa-regular fa-comment"></span><span
+                                            class="info2"> 19</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-blog-sec">
+                            <div class="recent-img">
+                                <img src="../image/image_3.jpg" alt="">
+                            </div>
+                            <div class="recent-content">
+                                <p class="recent-para">
+                                    Even the all-powerful Pointing has no control about the blind texts</p>
+                                <div class="recent-info">
+                                    <div class="recent-info-1"><span class="fa-regular fa-calendar-days"></span><span
+                                            class="info2"> April 19, 2019</span></div>
+                                    <div class="recent-info-1"><span class="fa-solid fa-person"></span><span
+                                            class="info2"> Admin</span></div>
+                                    <div class="recent-info-1"><span class="fa-regular fa-comment"></span><span
+                                            class="info2"> 19</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag-cloud-paragraph">
+                        <h1>paragraph</h1>
+                        <div class="pragraph-para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem
+                                necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa
+                                sapiente consectetur similique, inventore eos fugit cupiditate numquam!
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>

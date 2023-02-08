@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-1 {
+    width: 100%;
+    background-color: rgb(79, 136, 16);
+}
+
+.header-container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-class ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.main-class ul li {
+    list-style-type: none;
+
+}
+
+.main-class ul span {
+    color: white;
+    font-size: 16px;
+}
+
+/* ========================== */
+/* ==========responsive media section1================= */
+@media only screen and (max-width: 576px) {
+    .main-class ul {
+        padding: 7px;
+
+    }
+
+    .main-class ul span {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    .main-class ul {
+        padding: 7px;
+
+    }
+
+    .main-class ul span {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .main-class ul {
+        padding: 7px;
+
+    }
+
+    .main-class ul span {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .main-class ul {
+        padding: 10px;
+
+    }
+
+    .main-class ul span {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-class ul {
+        padding: 15px;
+
+    }
+
+    .main-class ul span {
+        font-size: 16px;
+    }
+
+}

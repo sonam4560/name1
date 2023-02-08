@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- blog css link -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1400,
+                loop: true,
+                autoplay: { delay: 2000 }
+            });
+        });
+    </script>
+    <style>
+        .theme {
+            background-color: black;
+            color: white;
+        }
+
+        .theme p {
+            color: blue;
+        }
+
+        .icon-icon {
+            /* color: white; */
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header-1">
+        <header>
+            <div class="header-container1">
+                <div class="main-class">
+                    <ul class="">
+                        <li> <span><i class="fa-solid fa-phone"></i></span> <span>+ 1235 2355 98</span></li>
+                        <li> <span><i class="fa-solid fa-paper-plane"></i></span> <span>YOUREMAIL@EMAIL.COM</span></li>
+                        <li> <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="header-2">
+        <div class="header-container2">
+            <header class="header-main-div">
+                <div class="logo">
+                    <h1>VEGEFOODS</h1>
+                </div>
+                <div class="header-bar">
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="bar-button">
+                    <button class="display-menu">
+                        <span class="fa-solid fa-bars  "></span>
+                    </button>
+
+                </div>
+                <div class="icon-icon">
+                    <span class="fa-solid fa-moon"></span>
+
+                </div>
+            </header>
+        </div>
+    </section>
+    <script>
+        let displaymenu = document.querySelector(".display-menu")
+        let headerbar = document.querySelector(".header-bar")
+        displaymenu.addEventListener("click", function () {
+            headerbar.classList.toggle("menu")
+
+        });
+    </script>
+
+    <script>
+        let icon = document.querySelector(".fa-moon");
+        let bg = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            bg.classList.toggle("theme");
+            if (bg.classList.contains("theme") == true) {
+                icon.classList.remove("fa-moon");
+                icon.innerHTML = "<span class='fa-solid fa-sun'></span>";
+            }
+            else {
+                icon.classList.remove("fa-sun");
+                icon.innerHTML = "<span class='fa-solid fa-moon'></span>";
+
+
+            }
+        }
+
+        );
+
+    </script>
+
+
+
+    <section class="landing-page-sec">
+        <div class="landing-page-container">
+            <div class="landing-img-sec">
+                <!-- <img src="../image/v1.jpg" alt=""> -->
+
+                <ul class="right-nav">
+                    <span class="anchor-tag"><a href="index.html">Home</a><span>/<span class="anchor-tag-color"><a
+                                    href="blog.html">Contact</a></span>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="information-box">
+        <div class="inforamation-container">
+            <div class="information-main-sec">
+                <div class="info-box-1">
+                    <span class="info">Address: 198 West 21th Street, Suite 721 New York NY 10016</span>
+                </div>
+                <div class="info-box-1">
+                    <span class="info">Phone:</span><span class="info2"> + 1235 2355 98</span>
+                </div>
+                <div class="info-box-1">
+                    <span class="info">Email:</span><span class="info2"> info@yoursite.com</span>
+                </div>
+                <div class="info-box-1">
+                    <span class="info">website:</span> <span class="info2"> yoursite.com</span>
+
+                </div>
+
+            </div>
+            <div class="location-info-sec">
+                <div class="map-location-info-sec">
+                </div>
+                <div class="contact-page-form-sec">
+                    <form action="" name="form1">
+                        <div class="sub-section">
+
+                            <input type="text" name="fname" placeholder="Your Name">
+                            <br>
+                            <span id="fname-msg msg"></span>
+
+                        </div>
+                        <div class="sub-section">
+                            <input type="text" placeholder="Email" name="email">
+                            <br>
+                            <span id="email-msg msg"></span>
+                        </div>
+                        <div class="sub-section" name="subname1">
+                            <!-- <input type="text" placeholder="subject" name="subname1"> -->
+                            <select name="subject">
+                                <option value="-1">select-----</option>
+                                <option value="">surat</option>
+                                <option value="">bhestan</option>
+                                <option value="">sachin</option>
+                                <option value="">udhna</option>
+                                <option value="">bharuch</option>
+
+                            </select>
+                            <br>
+                            <span id="subject-msg msg"></span>
+                        </div>
+                        <div class="text-area">
+                            <input type="text" placeholder="Type your message here" name="textarea">
+                            <br>
+                            <span id="text-msg msg"></span>
+                        </div>
+                        <div class="button">
+                            <button class="button-btn" type="submite" onclick="return form_valid()">Send
+                                message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function form_valid() {
+            let fname = document.form1.fname.value;
+            if (fname == "") {
+                document.getElementById("fname-msg").innerHTML = "enter your name first";
+                return false;
+            }
+            let email = document.form1.email.value;
+            if (email == "") {
+                document.getElementById("email-msg").innerHTML = "enter your email";
+                return false;
+            }
+
+            let subject = document.form1.subject.value;
+            if (subject == "-1") {
+                document.getElementById("subject-msg").innerHTML = "select your subject";
+                return false;
+            }
+            let textarea = document.form1.textarea.value;
+            if (textarea == "") {
+                document.getElementById("text-msg").innerHTML = "type----------something";
+                return false;
+            }
+        }
+
+    </script>
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-main-sec">
+                <div class="contact-footer-sec">
+                    <div class="location-area">
+                        <h2>VEGEFOODS</h2>
+                        <div class="location">
+                            <span><i class="fa-regular fa-location-pin"></i></span>
+                            <span class="">California, #32841 block, #221DRS 75 West </span>
+                        </div>
+                    </div>
+                    <div class="calling-area">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span> +(21)-255-999-8888</span>
+                    </div>
+                    <div class="mail-area">
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span> sonamrajput0555@gmail.com</span>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+                <div class="category-footer-sec">
+                    <h2>Help</h2>
+                    <ul>
+                        <li>Shipping Infomation</li>
+                        <li> Return & Exchange</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Police</li>
+                    </ul>
+                </div>
+                <div class="latest-gallery-footer-sec">
+                    <h2>Latest Gallery</h2>
+                    <div class="latest-gallery-grid-img-footer">
+                        <div class="galley-sec-col1">
+                            <div><img src="../image/product-1.jpg" alt=""></div>
+                            <div> <img src="../image/product-2.jpg" alt=""></div>
+                        </div>
+                        <div class="galley-sec-col1">
+                            <div><img src="../image/product-3.jpg" alt=""></div>
+                            <div> <img src="../image/product-4.jpg" alt=""></div>
+                        </div>
+                        <div class="galley-sec-col1">
+                            <div><img src="../image/product-5.jpg" alt=""></div>
+                            <div><img src="../image/product-6.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-footer-sec">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li> Shop</li>
+                        <li> About </li>
+                        <li>Journal</li>
+                        <li> Contact Us</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-content">
+                <p>© 2020 Go Trip. All rights reserved | Designed by SonamR</p>
+            </div>
+        </div>
+    </footer>

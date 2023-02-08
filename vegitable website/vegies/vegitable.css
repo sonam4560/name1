@@ -1,0 +1,133 @@
+.featured-product-sec {
+    width: 100%;
+}
+
+.featured-product-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-header-vegies .middle-nav {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.middle-nav li {
+    list-style: none;
+}
+
+.middle-nav li a {
+    text-decoration: none;
+    color: rgb(39, 155, 39);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+.featured-product-img-sec {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.featured-product-img-sec .featured-product-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.veg-img1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.veg-img1 {
+    position: relative;
+}
+
+.veg-img1 h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgb(110, 156, 40);
+}
+
+.veg-img2 {
+    position: relative;
+}
+
+/* ==============responsive========================= */
+
+
+@media only screen and (max-width:576px) {
+    .featured-product-img-sec .featured-product-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .veg-img1 img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (min-width:576px) {
+    .featured-product-img-sec .featured-product-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .veg-img1 img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .featured-product-img-sec .featured-product-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .veg-img1 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+}
+
+
+@media only screen and (min-width:992px) {
+    .featured-product-img-sec .featured-product-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .veg-img1 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    .featured-product-img-sec .featured-product-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .veg-img1 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery link -->
+
+    <!-- blog css link -->
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1400,
+                loop: true,
+                autoplay: { delay: 2000 }
+            });
+        });
+    </script>
+    <style>
+        .theme {
+            background-color: black;
+            color: white;
+        }
+
+        .theme p {
+            color: blue;
+        }
+
+        .icon-icon {
+            /* color: white; */
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header-1">
+        <header>
+            <div class="header-container1">
+                <div class="main-class">
+                    <ul class="">
+                        <li> <span><i class="fa-solid fa-phone"></i></span> <span>+ 1235 2355 98</span></li>
+                        <li> <span><i class="fa-solid fa-paper-plane"></i></span> <span>YOUREMAIL@EMAIL.COM</span></li>
+                        <li> <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="header-2">
+        <div class="header-container2">
+            <header class="header-main-div">
+                <div class="logo">
+                    <h1>VEGEFOODS</h1>
+                </div>
+                <div class="header-bar">
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="bar-button">
+                    <span class="fa-solid fa-bars  "></span>
+                </div>
+                <div class="icon-icon">
+                    <span class="fa-solid fa-moon"></span>
+
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <script>
+        let icon = document.querySelector(".fa-moon");
+        let bg = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            bg.classList.toggle("theme");
+            if (bg.classList.contains("theme") == true) {
+                icon.classList.remove("fa-moon");
+                icon.innerHTML = "<span class='fa-solid fa-sun'></span>";
+            }
+            else {
+                icon.classList.remove("fa-sun");
+                icon.innerHTML = "<span class='fa-solid fa-moon'></span>";
+
+
+            }
+        }
+
+        );
+
+    </script>
+
+
+
+    <section class="landing-page-sec">
+        <div class="landing-page-container">
+            <div class="landing-img-sec">
+                <!-- <img src="../image/v1.jpg" alt=""> -->
+
+                <ul class="right-nav">
+                    <span class="anchor-tag"><a href="index.html">Home</a></span>/<span class="anchor-tag-color"><a
+                                    href="blog.html">Add To Cart</a></span>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="payment-method">
+        <div class="payment-method-container">
+            <div class="payment-method-main">
+                <div class="row-payment-method">
+                    <div class="different-method">
+                       <div class="title"><h1>payment method</h1></div>
+                      <div class="method"> <input type="radio"><span>Credit /</span><span>Debit/</span><span>Atm Card</span></div>
+                      <div class="method"><input type="radio"><span>UPI</span></div>
+                      <div class="method"><input type="radio"><span>Net Banking</span></div>
+                      <div class="method"><input type="radio"><input type="text"><span>Cash ON DELIVERY</span></div>
+                      <hr>
+                    </div>
+                </div>
+                <div class="payment-process">
+                    <div class="process-method">
+                       <div class="process-title"><h1>Payment with Credit / Debit / Atm Card</h1></div>
+                       <div class="payment-box">
+                        <input type="text" placeholder="Card Number">
+                       </div>
+                       <div class="validation">
+                         <div class="button-btn">
+                    <button class="button"><a href="">View details</a></button>
+                </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->

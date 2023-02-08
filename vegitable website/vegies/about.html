@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- about css link -->
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1400,
+                loop: true,
+                autoplay: { delay: 2000 }
+            });
+        });
+    </script>
+    <style>
+        .theme {
+            background-color: black;
+            color: white;
+        }
+
+        .theme p {
+            color: blue;
+        }
+
+        .icon-icon {
+            /* color: white; */
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header-1">
+        <header>
+            <div class="header-container1">
+                <div class="main-class">
+                    <ul class="">
+                        <li> <span><i class="fa-solid fa-phone"></i></span> <span>+ 1235 2355 98</span></li>
+                        <li> <span><i class="fa-solid fa-paper-plane"></i></span> <span>YOUREMAIL@EMAIL.COM</span></li>
+                        <li> <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="header-2">
+        <div class="header-container2">
+            <header class="header-main-div">
+                <div class="logo">
+                    <h1>VEGEFOODS</h1>
+                </div>
+                <div class="header-bar">
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="bar-button">
+                    <button class="display-menu">
+                        <span class="fa-solid fa-bars  "></span>
+                    </button>
+
+                </div>
+                <div class="icon-icon">
+                    <span class="fa-solid fa-moon"></span>
+
+                </div>
+            </header>
+        </div>
+    </section>
+    <script>
+        let displaymenu = document.querySelector(".display-menu")
+        let headerbar = document.querySelector(".header-bar")
+        displaymenu.addEventListener("click", function () {
+            headerbar.classList.toggle("menu")
+
+        });
+    </script>
+
+    <script>
+        let icon = document.querySelector(".fa-moon");
+        let bg = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            bg.classList.toggle("theme");
+            if (bg.classList.contains("theme") == true) {
+                icon.classList.remove("fa-moon");
+                icon.innerHTML = "<span class='fa-solid fa-sun'></span>";
+            }
+            else {
+                icon.classList.remove("fa-sun");
+                icon.innerHTML = "<span class='fa-solid fa-moon'></span>";
+
+
+            }
+        }
+
+        );
+
+    </script>
+
+
+
+    <section class="landing-page-sec">
+        <div class="landing-page-container">
+            <div class="landing-img-sec">
+                <!-- <img src="../image/v1.jpg" alt=""> -->
+
+                <ul class="right-nav">
+                    <span class="anchor-tag"><a href="index.html">Home</a><span>/<span class="anchor-tag-color"><a
+                                    href="about.html">About</a></span>
+                </ul>
+            </div>
+        </div>
+        <div class="ecommerce-website-sec">
+            <div class="ecommerce-container">
+                <div class="ecommerce-main-div">
+                    <div class="ecommerse-img-sec">
+                        <img src="../image/about-img1.jpg" alt="">
+                    </div>
+                    <div class="ecommerse-content-sec">
+                        <h1>
+                            Welcome to Vegefoods an ECommerce website</h1>
+                        <p class="para1">Far far away, behind the word mountains, far from the countries Vokalia and
+                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
+                            coast of the Semantics, a large language ocean.</p>
+                        <p class="para2">But nothing the copy said could convince her and so it didn't take long until a
+                            few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their. </p>
+                        <div class="button">
+                            <button class="button-btn">View details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vegies-delivery-div">
+        <div class="vegies-delivery-container">
+            <div class="delivery-sec">
+                <div class="box">
+                    <div class="box1">
+                        <div class="box2">
+                            <div class="icon">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>free shiping</h2>
+                    <p>ON ORDER OVER $100</p>
+                </div>
+                <div class="box">
+                    <div class="box1">
+                        <div class="box2">
+                            <div class="icon">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>free shiping</h2>
+                    <p>ON ORDER OVER $100</p>
+                </div>
+                <div class="box">
+                    <div class="box1">
+                        <div class="box2">
+                            <div class="icon">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>free shiping</h2>
+                    <p>ON ORDER OVER $100</p>
+                </div>
+                <div class="box">
+                    <div class="box1">
+                        <div class="box2">
+                            <div class="icon">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>free shiping</h2>
+                    <p>ON ORDER OVER $100</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fruit-img-sec">
+        <div class="fruit-container-sec">
+            <div class="fruit-grid-sec">
+                <div class="fruit-main-img">
+                    <div class="img"><img src="../image/category.jpg" alt="">
+                        <h1>
+                            vegitable
+                        </h1>
+                    </div>
+                    <div class="img"><img src="../image/category-2.jpg" alt="">
+                        <h1>
+                            fruits
+                        </h1>
+                    </div>
+                </div>
+                <div class="fruit-main-img">
+
+                    <div class="img1">
+
+                        <h1>vegitables</h1>
+                        <p>Protect the health of every home</p>
+                        <button>Show Now</button>
+                    </div>
+
+                    <div class="img"><img src="../image/category 11.jpg" alt="">
+
+                    </div>
+                </div>
+
+                <div class="fruit-main-img">
+                    <div class="img"> <img src="../image/category-3.jpg" alt="">
+                        <h1>
+                            Juice
+                        </h1>
+                    </div>
+                    <div class="img"> <img src="../image/category-4.jpg" alt="">
+                        <h1>
+                            Dried
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-main-sec">
+                <div class="contact-footer-sec">
+                    <div class="location-area">
+                        <h2>VEGEFOODS</h2>
+                        <div class="location">
+                            <span><i class="fa-regular fa-location-pin"></i></span>
+                            <span class="">California, #32841 block, #221DRS 75 West </span>
+                        </div>
+                    </div>
+                    <div class="calling-area">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span> +(21)-255-999-8888</span>
+                    </div>
+                    <div class="mail-area">
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span> sonamrajput0555@gmail.com</span>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+                <div class="category-footer-sec">
+                    <h2>Help</h2>
+                    <ul>
+                        <li>Shipping Infomation</li>
+                        <li> Return & Exchange</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Police</li>
+                    </ul>
+                </div>
+                <div class="latest-gallery-footer-sec">
+                    <h2>Latest Gallery</h2>
+                    <div class="latest-gallery-grid-img-footer">
+                        <div class="galley-sec-col1">
+                            <div><img src="../image/product-1.jpg" alt=""></div>
+                            <div> <img src="../image/product-2.jpg" alt=""></div>
+                        </div>
+                        <div class="galley-sec-col1">
+                            <div><img src="../image/product-3.jpg" alt=""></div>
+                            <div> <img src="../image/product-4.jpg" alt=""></div>
+                        </div>
+                        <div class="galley-sec-col1">
+                            <div><img src="../image/product-5.jpg" alt=""></div>
+                            <div><img src="../image/product-6.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-footer-sec">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li> Shop</li>
+                        <li> About </li>
+                        <li>Journal</li>
+                        <li> Contact Us</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-content">
+                <p>© 2020 Go Trip. All rights reserved | Designed by SonamR</p>
+            </div>
+        </div>
+    </footer>

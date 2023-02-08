@@ -1,0 +1,32 @@
+    <section class=".hash-nav">
+        <div class="hashnav-container">
+            <div class="vegies-main">
+                <ul>
+                    <li><a href="#All"> All</a></li>
+                    <li><a href="vegitabels"> vegitabels</a></li>
+                    <li><a href="fruits"> fruits</a></li>
+                    <li><a href="Juice"> Juice</a></li>
+                    <li><a href="Dried"> Dried</a></li>
+                </ul>
+            </div>
+            <!-- <div class="owl-carousel owl-theme">
+                <div class="item " data-hash="All">
+                    <h1>1</h1>
+                </div>
+                <div class=" item  " data-hash="vegitabels">
+                    <h1>2</h1>
+                </div>
+                <div class=" item " data-hash="fruits ">
+                    <h1>3</h1>
+                </div>
+                <div class=" item " data-hash="Juice">
+                    <h1>4</h1>
+                </div>
+                <div class=" item " data-hash="Dried">
+                    <h1>5</h1>
+                </div>
+            </div> -->
+         
+        </div>
+
+    </section>
